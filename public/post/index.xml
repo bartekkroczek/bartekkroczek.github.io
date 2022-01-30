@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Bartek Kroczek&#39;s Blog</title>
+    <link>https://academic-demo.netlify.app/post/</link>
+      <atom:link href="https://academic-demo.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://academic-demo.netlify.app/post/</link>
+    </image>
+    
+    <item>
+      <title>Five faces of complex numbers</title>
+      <link>https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/</guid>
+      <description>&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;The purpose of this article is to briefly and intuitively recall the most important
+properties of complex numbers. These concepts are necessary to understand the Fourier
+transform, which I deal with in my other posts. However, please note that intuitiveness
+is more important to me than puritanism, which may lead to shortcuts uncomfortable for
+theoretical mathematicians.&lt;/p&gt;
+&lt;h2 id=&#34;a-simple-question-that-leads-to-a-complex-problem&#34;&gt;A simple question that leads to a complex problem&lt;/h2&gt;
+&lt;p&gt;It’s usually doesn’t works that way, but the story of the complex number is driven
+by a simple idea applied to an even simpler equation:&lt;/p&gt;
+&lt;p&gt;$$ f(x) = x^2 + 1$$&lt;/p&gt;
+&lt;p&gt;Of course, this equation has no solution on the plane of real numbers, which can
+be easily checked by looking at the graph.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Quadratic function plot, like in a formula above&#34;
+           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/x2plus1.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;But what happened when we forget about the traditional math and solve the equations above
+as $\sqrt{-1}$? It turns out that adding such a quantity (usually denoted as $i$) to the
+rational numbers leads to the creation of a numerical system full of interesting and
+useful properties, like a &lt;strong&gt;field structure&lt;/strong&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, which informally means that all classical
+algebraic operations are allowed.&lt;/p&gt;
+&lt;p&gt;What’s more this field is &lt;strong&gt;algebraically closed&lt;/strong&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; which - in relation to complex numbers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;means that
+&lt;strong&gt;every non-constant single-variable polynomial with complex coefficients has at least one complex root&lt;/strong&gt;. In the world of complex numbers, any equation is solvable!
+This statement is so important that we call this &lt;strong&gt;Fundamental Theorem of Algebra&lt;/strong&gt;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;complex-number-representation&#34;&gt;Complex number representation&lt;/h2&gt;
+&lt;p&gt;Complex numbers can be presented in various forms, each of them allows you to use their
+different properties.&lt;/p&gt;
+&lt;h3 id=&#34;algebraic-canonical-form&#34;&gt;Algebraic (canonical) form&lt;/h3&gt;
+&lt;p&gt;Let’s define a complex number as $z = a + bi$ where, $a, b \in \mathbb{R}$ (are rational) and
+$i = \sqrt{-1}$ as described above.&lt;/p&gt;
+&lt;p&gt;Basic algebraic operations look as follow:&lt;/p&gt;
+&lt;p&gt;$$ (a + bi) + (c + di) = (a +c) + (b+d)i $$
+$$(a+bi) \cdot (c+di) = ac + ibc + aid + ibid  = ac + i (bc + ad) + i^2 bd = (ac-bd) + i(bc+ad)$$
+$$\frac{a+bi}{c+di}  = \frac{ac + bd}{c^2 + d^2} + i \frac{bc-ad}{c^2 + d^2}, c^2 + d^2 \not = 0$$&lt;/p&gt;
+&lt;p&gt;What’s more interesting, each complex number (and it’s inverse) has root in the form:&lt;/p&gt;
+&lt;p&gt;$$a + bi = \bigg ( \sqrt{a + \sqrt{a^2 + b^2}} + i\sqrt{\frac{1}{2} (-a + \sqrt{a^2+b^2})} \bigg ) ^2$$&lt;/p&gt;
+&lt;p&gt;This form allows for convenient counting using complex numbers.&lt;/p&gt;
+&lt;h3 id=&#34;ordered-pairs&#34;&gt;Ordered pairs&lt;/h3&gt;
+&lt;p&gt;Complex numbers may be introduced as the set of pairs of real numbers, $(a, b) \in \mathbb{R}^2$.
+Please note, that this is this same $a$ and $b$ like in $z = a+bi$, so the relation between
+pairs and algebraic representation is trivial. This form is useful for
+&lt;strong&gt;formal construction of complex numbers&lt;/strong&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; and introduces an idea of representing a complex
+number as a point in two-dimensional space, which leads to geometrical interpretation.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Point (a, b) in a Real x Imaginary Cartesian space&#34;
+           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/ab.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;algebraic-operations-have-very-nice-interpretations-on-the-cartesian-plane&#34;&gt;Algebraic operations have very nice interpretations on the Cartesian plane.&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Addition follows the known parallelogram rule for vectors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Graphics form of adding rule&#34;
+           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/add.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Multiplying by $i$ is a 90-degree ($\frac{\pi}{2}$) rotation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Rotation as multiplication&#34;
+           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/circle.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Note that from this perspective $ i^2 = -1$ makes perfect sense.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Any other multiplication is just a rotation in point $(0,0)$ by some angle (described in the
+next paragraph) and rescaling (stretch or shorten) of the vector.&lt;/p&gt;
+&lt;h3 id=&#34;polar-coordinates&#34;&gt;Polar coordinates&lt;/h3&gt;
+&lt;p&gt;The rotation angle announced above is written as $\theta$, and the scaling factor is called $r$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Polar coordinates to point convertion&#34;
+           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/ang.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The relationship between the algebraic and trigonometric notations is only slightly more
+complicated, and requires some basic knowledge of trigonometry.&lt;/p&gt;
+&lt;p&gt;For $z = a + bi$ $r$ is calculated using the Pythagorean theorem.&lt;/p&gt;
+&lt;p&gt;$$ r = \sqrt{a^2 + b^2} $$&lt;/p&gt;
+&lt;p&gt;In turn, $\theta$ is just a definition of the inverse of the tangent ($arctg$)&lt;/p&gt;
+&lt;p&gt;$$ \theta = arctg(\frac{b}{a}) $$&lt;/p&gt;
+&lt;p&gt;Importantly, note that again we are dealing with a pair of values, so the correct notation
+is: $z = (r, \theta)$&lt;/p&gt;
+&lt;p&gt;This character is convenient because it makes multiplication so much easier:&lt;/p&gt;
+&lt;p&gt;$$ (r_1, \theta_1) \cdot (r_2, \theta_2) = (r_1 r_2, \theta_1 + \theta_2) $$&lt;/p&gt;
+&lt;p&gt;It is also a bridge to more sophisticated representations.&lt;/p&gt;
+&lt;h3 id=&#34;trigonometric-representation&#34;&gt;Trigonometric representation&lt;/h3&gt;
+&lt;p&gt;But how do you express a complex number using polar coordinates but as one number
+( not a pair, analogus to  $z = a + bi$) ?
+Once again, trigonometry comes in handy, namely the definition of
+the sine and cosine functions.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;By definition:&lt;/p&gt;
+&lt;p&gt;$$sin (\theta) =\frac{b}{r}, cos (\theta) = \frac{a}{r}$$&lt;/p&gt;
+&lt;p&gt;so&lt;/p&gt;
+&lt;p&gt;$$a = r cos(\theta) , b = r sin(\theta)$$&lt;/p&gt;
+&lt;p&gt;Substituting the values calculated above into the equation $z = a + bi$ we get:&lt;/p&gt;
+&lt;p&gt;$$z = a + bi = r cos (\theta) + i r sin (\theta) = r \big ( cos (\theta) + i sin (\theta) \big )$$&lt;/p&gt;
+&lt;p&gt;This form, although very useful (it is embedded in the Fourier transform itself), is not
+convenient for counting. However this problem can be solved by a clever trick, what the next
+paragraph will be about.&lt;/p&gt;
+&lt;h3 id=&#34;exponential-form&#34;&gt;Exponential form&lt;/h3&gt;
+&lt;p&gt;We need to start with a few words about &lt;strong&gt;Taylor series&lt;/strong&gt;&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;It’s a tool for expressing any function is some a form of polynomial&lt;/p&gt;
+&lt;p&gt;$$ f(a)+\frac {f&#39;(a)}{1!} (x-a)+ \frac{f&#39;&#39;(a)}{2!} (x-a)^2+\frac{f&#39;&#39;&#39;(a)}{3!}(x-a)^3+ \cdots $$&lt;/p&gt;
+&lt;p&gt;or in short:&lt;/p&gt;
+&lt;p&gt;$$ \sum_{n=0} ^ {\infty} \frac {f^{(n)}(a)}{n!} (x-a)^{n} $$&lt;/p&gt;
+&lt;p&gt;When we use a finite number of elements of the sum, the taylor series becomes an approximation
+of the original function around point $a$. The closer to point $a$ is the value of the function
+we calculate, the smaller the error of the approximation will be. Taylor series expressing
+with $a = 0$ is called &lt;strong&gt;Maclaurin series&lt;/strong&gt;&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;$$\sum_{n=0} ^ {\infty} f^{(n)}(0) \frac {x^n}{n!} =  f(0)+\frac {f&#39;(0)}{1!} (x)+ \frac{f&#39;&#39;(0)}{2!} (x)^2+\frac{f&#39;&#39;&#39;(0)}{3!}(x)^3+ \cdots$$&lt;/p&gt;
+&lt;p&gt;What happens when we try to expand the sine and cosine functions into a Maclaurin series?
+Let’s start with calculating derivatives:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Sin and Cos derivatives&#34;
+           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/prims.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can see that the cycle repeats itself from the fourth derivative.
+Expanding the sine and cosine functions into the Taylor series looks like this:&lt;/p&gt;
+&lt;p&gt;$$\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots $$&lt;/p&gt;
+&lt;p&gt;$$ \cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots $$&lt;/p&gt;
+&lt;h3 id=&#34;the-magic-begins&#34;&gt;The magic begins&lt;/h3&gt;
+&lt;p&gt;Let’s recall the definition of the exponential function
+$$ e^x := \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots $$&lt;/p&gt;
+&lt;p&gt;Note that this definition looks similar to taylor series expansions!
+If we substitute $x = i\theta$, even more similarities arise.&lt;/p&gt;
+&lt;p&gt;$$ e^{i\theta} =  1 + i\theta + \frac{(i\theta)^2}{2} + \frac{(i\theta)^3}{3!} + \frac{(i\theta)^4}{4!} + \cdots = 1 + i\theta - \frac{\theta^2}{2} -i \frac{\theta^3}{3!} + \frac{\theta^4}{4!} + \cdots $$&lt;/p&gt;
+&lt;p&gt;When we group the elements of the sum so that all real and all imaginary are next to each other
+and take $i$ in front of the parenthesis $\cdots$&lt;/p&gt;
+&lt;p&gt;$$ \bigg(1 - \frac{\theta^2}{2}  + \frac{\theta^4}{4!} - \frac{\theta^6}{6!}+  \dots \bigg ) + i \bigg (\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \frac{\theta^7}{7!} +\dots \bigg ) $$&lt;/p&gt;
+&lt;p&gt;$\cdots$ it turns out that the following equality is true:&lt;/p&gt;
+&lt;p&gt;$$ e^{i\theta} = cos(\theta) + i sin(\theta) $$&lt;/p&gt;
+&lt;p&gt;If that wasn’t neat enough if we substitute $\pi$ for $\theta$ we get:&lt;/p&gt;
+&lt;p&gt;$$ e^{\pi i } +1 = 0$$&lt;/p&gt;
+&lt;p&gt;What we call the &lt;strong&gt;Euler’s identity&lt;/strong&gt;&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;, which is widely recognized as one of the most
+beautiful equations in all of mathematics.&lt;/p&gt;
+&lt;p&gt;Finally, we have to go back to the trigonometric form of complex numbers&lt;/p&gt;
+&lt;p&gt;$$ z = a + bi = r cos (\theta) + i r sin (\theta) = r \big ( cos (\theta) + i sin (\theta) \big ) = re^{i\theta} $$&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I believe that understanding the relationship between the different forms of complex numbers is
+crucial to understanding the technical details behind the &lt;strong&gt;Fourier Transform&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Complex_number#Relations_and_operations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Complex_number#Relations_and_operations&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Algebraically_closed_field&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Algebraically_closed_field&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Complex_number#Formal_construction&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Complex_number#Formal_construction&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Taylor_series&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Taylor_series&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Colin_Maclaurin#Contributions_to_mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Colin_Maclaurin#Contributions_to_mathematics&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Euler%27s_identity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Euler%27s_identity&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

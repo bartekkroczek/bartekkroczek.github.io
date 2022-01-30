@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magdalena Senderecka | Bartek Kroczek&#39;s Blog</title>
+    <link>https://academic-demo.netlify.app/author/magdalena-senderecka/</link>
+      <atom:link href="https://academic-demo.netlify.app/author/magdalena-senderecka/index.xml" rel="self" type="application/rss+xml" />
+    <description>Magdalena Senderecka</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Magdalena Senderecka</title>
+      <link>https://academic-demo.netlify.app/author/magdalena-senderecka/</link>
+    </image>
+    
+    <item>
+      <title>Socially induced negative affective knowledge modulates early face perception but not gaze cueing of attention</title>
+      <link>https://academic-demo.netlify.app/publication/matyjek-2021-socially/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/publication/matyjek-2021-socially/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Socially induced negative emotions elicit neural activity in the mentalizing network in a subsequent inhibitory task</title>
+      <link>https://academic-demo.netlify.app/publication/senderecka-2021-socially/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/publication/senderecka-2021-socially/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post-error brain activity correlates with incidental memory for negative words</title>
+      <link>https://academic-demo.netlify.app/publication/senderecka-2018-post/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/publication/senderecka-2018-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Short-Duration Affective States Induced by Emotional Words Improve Response Inhibition: An Event-Related Potential Study</title>
+      <link>https://academic-demo.netlify.app/publication/senderecka-2018-short/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/publication/senderecka-2018-short/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERP correlates of the conflict level in the multi-response Stroop task</title>
+      <link>https://academic-demo.netlify.app/publication/chuderski-2016-erp/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/publication/chuderski-2016-erp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
