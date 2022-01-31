@@ -63,7 +63,7 @@
   <meta name="description" content="Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/" />
+  <link rel="alternate" hreflang="en-us" href="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" />
 
   
   
@@ -279,7 +279,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/" />
+  <link rel="canonical" href="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" />
 
   
   
@@ -301,10 +301,10 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Bartek Kroczek&#39;s Blog" />
-  <meta property="og:url" content="https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/" />
+  <meta property="og:url" content="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" />
   <meta property="og:title" content="Five faces of complex numbers | Bartek Kroczek&#39;s Blog" />
-  <meta property="og:description" content="Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts." /><meta property="og:image" content="https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/featured.jpg" />
-    <meta property="twitter:image" content="https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts." /><meta property="og:image" content="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/featured.jpg" />
+    <meta property="twitter:image" content="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -336,12 +336,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/"
+    "@id": "https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/"
   },
   "headline": "Five faces of complex numbers",
   
   "image": [
-    "https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/featured.jpg"
+    "https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/featured.jpg"
   ],
   
   "datePublished": "2021-01-29T00:00:00Z",
@@ -357,7 +357,7 @@
     "name": "Bartek Kroczek's Blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"
+      "url": "https://bartekkroczek.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts."
@@ -627,8 +627,8 @@
           
             
             <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="https://twitter.com/bartkroczek" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
+              <a class="nav-link" href="/"  aria-label="">
+                <i class="fas fa-" aria-hidden="true"></i>
               </a>
             </li>
           
@@ -734,7 +734,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 min read
+    7 min read
   </span>
   
 
@@ -777,6 +777,27 @@ properties of complex numbers. These concepts are necessary to understand the Fo
 transform, which I deal with in my other posts. However, please note that intuitiveness
 is more important to me than puritanism, which may lead to shortcuts uncomfortable for
 theoretical mathematicians.</p>
+<details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#a-simple-question-that-leads-to-a-complex-problem">A simple question that leads to a complex problem</a></li>
+    <li><a href="#complex-number-representation">Complex number representation</a>
+      <ul>
+        <li><a href="#algebraic-canonical-form">Algebraic (canonical) form</a></li>
+        <li><a href="#ordered-pairs">Ordered pairs</a></li>
+        <li><a href="#polar-coordinates">Polar coordinates</a></li>
+        <li><a href="#trigonometric-representation">Trigonometric representation</a></li>
+        <li><a href="#exponential-form">Exponential form</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-magic-begins">The magic begins</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+</details>
 <h2 id="a-simple-question-that-leads-to-a-complex-problem">A simple question that leads to a complex problem</h2>
 <p>It’s usually doesn’t works that way, but the story of the complex number is driven
 by a simple idea applied to an even simpler equation:</p>
@@ -1003,7 +1024,7 @@ Let’s start with calculating derivatives:</p>
 Expanding the sine and cosine functions into the Taylor series looks like this:</p>
 <p>$$\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots $$</p>
 <p>$$ \cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots $$</p>
-<h3 id="the-magic-begins">The magic begins</h3>
+<h2 id="the-magic-begins">The magic begins</h2>
 <p>Let’s recall the definition of the exponential function
 $$ e^x := \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots $$</p>
 <p>Note that this definition looks similar to taylor series expansions!
@@ -1073,7 +1094,7 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/&amp;text=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;text=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1086,7 +1107,7 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/&amp;t=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;t=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1099,7 +1120,7 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
       
       <li>
-        <a href="mailto:?subject=Five%20faces%20of%20complex%20numbers&amp;body=https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Five%20faces%20of%20complex%20numbers&amp;body=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1112,7 +1133,7 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/&amp;title=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;title=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1125,7 +1146,7 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
       
       <li>
-        <a href="whatsapp://send?text=Five%20faces%20of%20complex%20numbers%20https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Five%20faces%20of%20complex%20numbers%20https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1138,7 +1159,7 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/&amp;title=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;title=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1171,11 +1192,11 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
   <div class="media author-card content-widget-hr">
     
       
-      <a href="https://academic-demo.netlify.app/"><img class="avatar mr-3 avatar-circle" src="/author/bartek-kroczek/avatar_hud775384d6e1de19a81664cb136eec910_1089933_270x270_fill_q75_lanczos_center.jpg" alt="Bartek Kroczek"></a>
+      <a href="https://bartekkroczek.netlify.app/"><img class="avatar mr-3 avatar-circle" src="/author/bartek-kroczek/avatar_hud775384d6e1de19a81664cb136eec910_1089933_270x270_fill_q75_lanczos_center.jpg" alt="Bartek Kroczek"></a>
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="https://academic-demo.netlify.app/">Bartek Kroczek</a></h5>
+      <h5 class="card-title"><a href="https://bartekkroczek.netlify.app/">Bartek Kroczek</a></h5>
       <h6 class="card-subtitle">PhD Student (Cognitive Neuroscience)</h6>
       <p class="card-text">Data scientist with an academic fervor.</p>
       <ul class="network-icon" aria-hidden="true">
@@ -1209,8 +1230,8 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
       
     
     <li>
-      <a href="https://twitter.com/bartkroczek" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
+      <a href="/" >
+        <i class="fas fa-"></i>
       </a>
     </li>
   
@@ -1245,6 +1266,23 @@ crucial to understanding the technical details behind the <strong>Fourier Transf
     <li>
       <a href="https://github.com/bartekkroczek" target="_blank" rel="noopener">
         <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Bartlomiej-Kroczek" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
       </a>
     </li>
   

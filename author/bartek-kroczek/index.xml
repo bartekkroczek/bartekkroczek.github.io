@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bartek Kroczek | Bartek Kroczek&#39;s Blog</title>
-    <link>https://academic-demo.netlify.app/author/bartek-kroczek/</link>
-      <atom:link href="https://academic-demo.netlify.app/author/bartek-kroczek/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bartekkroczek.netlify.app/author/bartek-kroczek/</link>
+      <atom:link href="https://bartekkroczek.netlify.app/author/bartek-kroczek/index.xml" rel="self" type="application/rss+xml" />
     <description>Bartek Kroczek</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright>
     <image>
-      <url>https://academic-demo.netlify.app/author/bartek-kroczek/avatar_hud775384d6e1de19a81664cb136eec910_1089933_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://bartekkroczek.netlify.app/author/bartek-kroczek/avatar_hud775384d6e1de19a81664cb136eec910_1089933_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Bartek Kroczek</title>
-      <link>https://academic-demo.netlify.app/author/bartek-kroczek/</link>
+      <link>https://bartekkroczek.netlify.app/author/bartek-kroczek/</link>
     </image>
     
   </channel>

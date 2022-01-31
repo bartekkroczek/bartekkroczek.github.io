@@ -2,27 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Bartek Kroczek&#39;s Blog</title>
-    <link>https://academic-demo.netlify.app/post/</link>
-      <atom:link href="https://academic-demo.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bartekkroczek.netlify.app/post/</link>
+      <atom:link href="https://bartekkroczek.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://bartekkroczek.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
-      <link>https://academic-demo.netlify.app/post/</link>
+      <link>https://bartekkroczek.netlify.app/post/</link>
     </image>
     
     <item>
       <title>Five faces of complex numbers</title>
-      <link>https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/</link>
+      <link>https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/</guid>
+      <guid>https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/</guid>
       <description>&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
 &lt;p&gt;The purpose of this article is to briefly and intuitively recall the most important
 properties of complex numbers. These concepts are necessary to understand the Fourier
 transform, which I deal with in my other posts. However, please note that intuitiveness
 is more important to me than puritanism, which may lead to shortcuts uncomfortable for
 theoretical mathematicians.&lt;/p&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#disclaimer&#34;&gt;Disclaimer&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#a-simple-question-that-leads-to-a-complex-problem&#34;&gt;A simple question that leads to a complex problem&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#complex-number-representation&#34;&gt;Complex number representation&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#algebraic-canonical-form&#34;&gt;Algebraic (canonical) form&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#ordered-pairs&#34;&gt;Ordered pairs&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#polar-coordinates&#34;&gt;Polar coordinates&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#trigonometric-representation&#34;&gt;Trigonometric representation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#exponential-form&#34;&gt;Exponential form&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-magic-begins&#34;&gt;The magic begins&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
 &lt;h2 id=&#34;a-simple-question-that-leads-to-a-complex-problem&#34;&gt;A simple question that leads to a complex problem&lt;/h2&gt;
 &lt;p&gt;It’s usually doesn’t works that way, but the story of the complex number is driven
 by a simple idea applied to an even simpler equation:&lt;/p&gt;
@@ -48,7 +69,7 @@ be easily checked by looking at the graph.&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Quadratic function plot, like in a formula above&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/x2plus1.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/x2plus1.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -101,7 +122,7 @@ number as a point in two-dimensional space, which leads to geometrical interpret
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Point (a, b) in a Real x Imaginary Cartesian space&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/ab.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/ab.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -127,7 +148,7 @@ number as a point in two-dimensional space, which leads to geometrical interpret
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Graphics form of adding rule&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/add.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/add.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/li&gt;
@@ -151,7 +172,7 @@ number as a point in two-dimensional space, which leads to geometrical interpret
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Rotation as multiplication&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/circle.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/circle.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
@@ -180,7 +201,7 @@ next paragraph) and rescaling (stretch or shorten) of the vector.&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Polar coordinates to point convertion&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/ang.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/ang.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -241,7 +262,7 @@ Let’s start with calculating derivatives:&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Sin and Cos derivatives&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/prims.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/prims.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -249,7 +270,7 @@ Let’s start with calculating derivatives:&lt;/p&gt;
 Expanding the sine and cosine functions into the Taylor series looks like this:&lt;/p&gt;
 &lt;p&gt;$$\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots $$&lt;/p&gt;
 &lt;p&gt;$$ \cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots $$&lt;/p&gt;
-&lt;h3 id=&#34;the-magic-begins&#34;&gt;The magic begins&lt;/h3&gt;
+&lt;h2 id=&#34;the-magic-begins&#34;&gt;The magic begins&lt;/h2&gt;
 &lt;p&gt;Let’s recall the definition of the exponential function
 $$ e^x := \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots $$&lt;/p&gt;
 &lt;p&gt;Note that this definition looks similar to taylor series expansions!

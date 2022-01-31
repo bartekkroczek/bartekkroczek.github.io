@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bartek Kroczek&#39;s Blog</title>
-    <link>https://academic-demo.netlify.app/</link>
-      <atom:link href="https://academic-demo.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bartekkroczek.netlify.app/</link>
+      <atom:link href="https://bartekkroczek.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <description>Bartek Kroczek&#39;s Blog</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://bartekkroczek.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Bartek Kroczek&#39;s Blog</title>
-      <link>https://academic-demo.netlify.app/</link>
+      <link>https://bartekkroczek.netlify.app/</link>
     </image>
     
     <item>
       <title>Python basics</title>
-      <link>https://academic-demo.netlify.app/courses/example/python/</link>
+      <link>https://bartekkroczek.netlify.app/courses/example/python/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/courses/example/python/</guid>
+      <guid>https://bartekkroczek.netlify.app/courses/example/python/</guid>
       <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -51,9 +51,9 @@
     
     <item>
       <title>Visualization</title>
-      <link>https://academic-demo.netlify.app/courses/example/visualization/</link>
+      <link>https://bartekkroczek.netlify.app/courses/example/visualization/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/courses/example/visualization/</guid>
+      <guid>https://bartekkroczek.netlify.app/courses/example/visualization/</guid>
       <description>&lt;p&gt;Learn how to visualize data with Plotly.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -81,9 +81,9 @@ fig.show()
     
     <item>
       <title>Statistics</title>
-      <link>https://academic-demo.netlify.app/courses/example/stats/</link>
+      <link>https://bartekkroczek.netlify.app/courses/example/stats/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/courses/example/stats/</guid>
+      <guid>https://bartekkroczek.netlify.app/courses/example/stats/</guid>
       <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -109,9 +109,9 @@ The variance of the distribution is $\sigma^{2}$.
     
     <item>
       <title>Example Talk</title>
-      <link>https://academic-demo.netlify.app/talk/example-talk/</link>
+      <link>https://bartekkroczek.netlify.app/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/talk/example-talk/</guid>
+      <guid>https://bartekkroczek.netlify.app/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -129,15 +129,36 @@ The variance of the distribution is $\sigma^{2}$.
     
     <item>
       <title>Five faces of complex numbers</title>
-      <link>https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/</link>
+      <link>https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/</guid>
+      <guid>https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/</guid>
       <description>&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
 &lt;p&gt;The purpose of this article is to briefly and intuitively recall the most important
 properties of complex numbers. These concepts are necessary to understand the Fourier
 transform, which I deal with in my other posts. However, please note that intuitiveness
 is more important to me than puritanism, which may lead to shortcuts uncomfortable for
 theoretical mathematicians.&lt;/p&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#disclaimer&#34;&gt;Disclaimer&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#a-simple-question-that-leads-to-a-complex-problem&#34;&gt;A simple question that leads to a complex problem&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#complex-number-representation&#34;&gt;Complex number representation&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#algebraic-canonical-form&#34;&gt;Algebraic (canonical) form&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#ordered-pairs&#34;&gt;Ordered pairs&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#polar-coordinates&#34;&gt;Polar coordinates&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#trigonometric-representation&#34;&gt;Trigonometric representation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#exponential-form&#34;&gt;Exponential form&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-magic-begins&#34;&gt;The magic begins&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/details&gt;
 &lt;h2 id=&#34;a-simple-question-that-leads-to-a-complex-problem&#34;&gt;A simple question that leads to a complex problem&lt;/h2&gt;
 &lt;p&gt;It’s usually doesn’t works that way, but the story of the complex number is driven
 by a simple idea applied to an even simpler equation:&lt;/p&gt;
@@ -163,7 +184,7 @@ be easily checked by looking at the graph.&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Quadratic function plot, like in a formula above&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/x2plus1.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/x2plus1.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -216,7 +237,7 @@ number as a point in two-dimensional space, which leads to geometrical interpret
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Point (a, b) in a Real x Imaginary Cartesian space&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/ab.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/ab.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -242,7 +263,7 @@ number as a point in two-dimensional space, which leads to geometrical interpret
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Graphics form of adding rule&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/add.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/add.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/li&gt;
@@ -266,7 +287,7 @@ number as a point in two-dimensional space, which leads to geometrical interpret
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Rotation as multiplication&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/circle.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/circle.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
@@ -295,7 +316,7 @@ next paragraph) and rescaling (stretch or shorten) of the vector.&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Polar coordinates to point convertion&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/ang.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/ang.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -356,7 +377,7 @@ Let’s start with calculating derivatives:&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Sin and Cos derivatives&#34;
-           src=&#34;https://academic-demo.netlify.app/post/five-faces-of-complex-numbers/img/prims.svg&#34;
+           src=&#34;https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/img/prims.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -364,7 +385,7 @@ Let’s start with calculating derivatives:&lt;/p&gt;
 Expanding the sine and cosine functions into the Taylor series looks like this:&lt;/p&gt;
 &lt;p&gt;$$\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots $$&lt;/p&gt;
 &lt;p&gt;$$ \cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots $$&lt;/p&gt;
-&lt;h3 id=&#34;the-magic-begins&#34;&gt;The magic begins&lt;/h3&gt;
+&lt;h2 id=&#34;the-magic-begins&#34;&gt;The magic begins&lt;/h2&gt;
 &lt;p&gt;Let’s recall the definition of the exponential function
 $$ e^x := \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots $$&lt;/p&gt;
 &lt;p&gt;Note that this definition looks similar to taylor series expansions!
@@ -416,49 +437,49 @@ crucial to understanding the technical details behind the &lt;strong&gt;Fourier 
     
     <item>
       <title>Galton and Spearman revisited: Can single general discrimination ability drive performance on diverse sensorimotor tasks and explain intelligence?</title>
-      <link>https://academic-demo.netlify.app/publication/jastrzkebski-2021-galton/</link>
+      <link>https://bartekkroczek.netlify.app/publication/jastrzkebski-2021-galton/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/jastrzkebski-2021-galton/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/jastrzkebski-2021-galton/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Metacognitive experience on Raven’s matrices versus insight problems</title>
-      <link>https://academic-demo.netlify.app/publication/chuderski-2021-metacognitive/</link>
+      <link>https://bartekkroczek.netlify.app/publication/chuderski-2021-metacognitive/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/chuderski-2021-metacognitive/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/chuderski-2021-metacognitive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Socially induced negative affective knowledge modulates early face perception but not gaze cueing of attention</title>
-      <link>https://academic-demo.netlify.app/publication/matyjek-2021-socially/</link>
+      <link>https://bartekkroczek.netlify.app/publication/matyjek-2021-socially/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/matyjek-2021-socially/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/matyjek-2021-socially/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Socially induced negative emotions elicit neural activity in the mentalizing network in a subsequent inhibitory task</title>
-      <link>https://academic-demo.netlify.app/publication/senderecka-2021-socially/</link>
+      <link>https://bartekkroczek.netlify.app/publication/senderecka-2021-socially/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/senderecka-2021-socially/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/senderecka-2021-socially/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Why people err on multiple-choice analogical reasoning tests</title>
-      <link>https://academic-demo.netlify.app/publication/chuderski-2021-people/</link>
+      <link>https://bartekkroczek.netlify.app/publication/chuderski-2021-people/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/chuderski-2021-people/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/chuderski-2021-people/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://academic-demo.netlify.app/slides/example/</link>
+      <link>https://bartekkroczek.netlify.app/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/slides/example/</guid>
+      <guid>https://bartekkroczek.netlify.app/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -585,41 +606,41 @@ $$&lt;/p&gt;
     
     <item>
       <title>Delta-gamma coupling as a potential neurophysiological mechanism of fluid intelligence</title>
-      <link>https://academic-demo.netlify.app/publication/gkagol-2018-delta/</link>
+      <link>https://bartekkroczek.netlify.app/publication/gkagol-2018-delta/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/gkagol-2018-delta/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/gkagol-2018-delta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Post-error brain activity correlates with incidental memory for negative words</title>
-      <link>https://academic-demo.netlify.app/publication/senderecka-2018-post/</link>
+      <link>https://bartekkroczek.netlify.app/publication/senderecka-2018-post/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/senderecka-2018-post/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/senderecka-2018-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Short-Duration Affective States Induced by Emotional Words Improve Response Inhibition: An Event-Related Potential Study</title>
-      <link>https://academic-demo.netlify.app/publication/senderecka-2018-short/</link>
+      <link>https://bartekkroczek.netlify.app/publication/senderecka-2018-short/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/senderecka-2018-short/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/senderecka-2018-short/</guid>
       <description></description>
     </item>
     
     <item>
       <title>External Project</title>
-      <link>https://academic-demo.netlify.app/project/external-project/</link>
+      <link>https://bartekkroczek.netlify.app/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/project/external-project/</guid>
+      <guid>https://bartekkroczek.netlify.app/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>https://academic-demo.netlify.app/project/internal-project/</link>
+      <link>https://bartekkroczek.netlify.app/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/project/internal-project/</guid>
+      <guid>https://bartekkroczek.netlify.app/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -630,25 +651,25 @@ $$&lt;/p&gt;
     
     <item>
       <title>ERP correlates of the conflict level in the multi-response Stroop task</title>
-      <link>https://academic-demo.netlify.app/publication/chuderski-2016-erp/</link>
+      <link>https://bartekkroczek.netlify.app/publication/chuderski-2016-erp/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/chuderski-2016-erp/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/chuderski-2016-erp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>No Spearman’s Law of Diminishing Returns for the working memory and intelligence relationship</title>
-      <link>https://academic-demo.netlify.app/publication/kroczek-2016-no/</link>
+      <link>https://bartekkroczek.netlify.app/publication/kroczek-2016-no/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/publication/kroczek-2016-no/</guid>
+      <guid>https://bartekkroczek.netlify.app/publication/kroczek-2016-no/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://academic-demo.netlify.app/admin/config.yml</link>
+      <link>https://bartekkroczek.netlify.app/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://academic-demo.netlify.app/admin/config.yml</guid>
+      <guid>https://bartekkroczek.netlify.app/admin/config.yml</guid>
       <description></description>
     </item>
     
