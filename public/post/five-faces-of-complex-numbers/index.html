@@ -1,0 +1,1518 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Bartek Kroczek" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.512574799414e7d36471486881070b0f.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu4116baecf408685f396334e43468238c_33317_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4116baecf408685f396334e43468238c_33317_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Bartek Kroczek&#39;s Blog" />
+  <meta property="og:url" content="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" />
+  <meta property="og:title" content="Five faces of complex numbers | Bartek Kroczek&#39;s Blog" />
+  <meta property="og:description" content="Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts." /><meta property="og:image" content="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/featured.jpg" />
+    <meta property="twitter:image" content="https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-01-29T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-01-29T14:52:06&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/"
+  },
+  "headline": "Five faces of complex numbers",
+  
+  "image": [
+    "https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/featured.jpg"
+  ],
+  
+  "datePublished": "2021-01-29T00:00:00Z",
+  "dateModified": "2022-01-29T14:52:06+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Bartek Kroczek"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhD Student at JU",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bartekkroczek.netlify.app/media/icon_hu4116baecf408685f396334e43468238c_33317_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Disclaimer The purpose of this article is to briefly and intuitively recall the most important properties of complex numbers. These concepts are necessary to understand the Fourier transform, which I deal with in my other posts."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Five faces of complex numbers | Bartek Kroczek&#39;s Blog</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="670a9f3464e5d942346ded0343a5689d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8f76bdc9e086322ed5147724ebba3d06.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Bartek Kroczek&#39;s Blog</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Bartek Kroczek&#39;s Blog</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Main</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="/"  aria-label="">
+                <i class="fas fa-" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Five faces of complex numbers</h1>
+
+  
+  <p class="page-subtitle">A brief preparation for understanding the Fourier Transform</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jan 29, 2022
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 588px;">
+  <div style="position: relative">
+    <img src="/post/five-faces-of-complex-numbers/featured_hu906fdcf9ab298d98435c8289b5ee5b22_93486_720x2500_fit_q75_h2_lanczos.webp" width="720" height="588" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="disclaimer">Disclaimer</h2>
+<p>The purpose of this article is to briefly and intuitively recall the most important
+properties of complex numbers. These concepts are necessary to understand the Fourier
+transform, which I deal with in my other posts. However, please note that intuitiveness
+is more important to me than puritanism, which may lead to shortcuts uncomfortable for
+theoretical mathematicians.</p>
+<details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#a-simple-question-that-leads-to-a-complex-problem">A simple question that leads to a complex problem</a></li>
+    <li><a href="#complex-number-representation">Complex number representation</a>
+      <ul>
+        <li><a href="#algebraic-canonical-form">Algebraic (canonical) form</a></li>
+        <li><a href="#ordered-pairs">Ordered pairs</a></li>
+        <li><a href="#polar-coordinates">Polar coordinates</a></li>
+        <li><a href="#trigonometric-representation">Trigonometric representation</a></li>
+        <li><a href="#exponential-form">Exponential form</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-magic-begins">The magic begins</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+</details>
+<h2 id="a-simple-question-that-leads-to-a-complex-problem">A simple question that leads to a complex problem</h2>
+<p>It’s usually doesn’t works that way, but the story of the complex number is driven
+by a simple idea applied to an even simpler equation:</p>
+<p>$$ f(x) = x^2 + 1$$</p>
+<p>Of course, this equation has no solution on the plane of real numbers, which can
+be easily checked by looking at the graph.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Quadratic function plot, like in a formula above"
+           src="/post/five-faces-of-complex-numbers/img/x2plus1.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>But what happened when we forget about the traditional math and solve the equations above
+as $\sqrt{-1}$? It turns out that adding such a quantity (usually denoted as $i$) to the
+rational numbers leads to the creation of a numerical system full of interesting and
+useful properties, like a <strong>field structure</strong> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, which informally means that all classical
+algebraic operations are allowed.</p>
+<p>What’s more this field is <strong>algebraically closed</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> which - in relation to complex numbers</p>
+<ul>
+<li>means that
+<strong>every non-constant single-variable polynomial with complex coefficients has at least one complex root</strong>. In the world of complex numbers, any equation is solvable!
+This statement is so important that we call this <strong>Fundamental Theorem of Algebra</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+<h2 id="complex-number-representation">Complex number representation</h2>
+<p>Complex numbers can be presented in various forms, each of them allows you to use their
+different properties.</p>
+<h3 id="algebraic-canonical-form">Algebraic (canonical) form</h3>
+<p>Let’s define a complex number as $z = a + bi$ where, $a, b \in \mathbb{R}$ (are rational) and
+$i = \sqrt{-1}$ as described above.</p>
+<p>Basic algebraic operations look as follow:</p>
+<p>$$ (a + bi) + (c + di) = (a +c) + (b+d)i $$
+$$(a+bi) \cdot (c+di) = ac + ibc + aid + ibid  = ac + i (bc + ad) + i^2 bd = (ac-bd) + i(bc+ad)$$
+$$\frac{a+bi}{c+di}  = \frac{ac + bd}{c^2 + d^2} + i \frac{bc-ad}{c^2 + d^2}, c^2 + d^2 \not = 0$$</p>
+<p>What’s more interesting, each complex number (and it’s inverse) has root in the form:</p>
+<p>$$a + bi = \bigg ( \sqrt{a + \sqrt{a^2 + b^2}} + i\sqrt{\frac{1}{2} (-a + \sqrt{a^2+b^2})} \bigg ) ^2$$</p>
+<p>This form allows for convenient counting using complex numbers.</p>
+<h3 id="ordered-pairs">Ordered pairs</h3>
+<p>Complex numbers may be introduced as the set of pairs of real numbers, $(a, b) \in \mathbb{R}^2$.
+Please note, that this is this same $a$ and $b$ like in $z = a+bi$, so the relation between
+pairs and algebraic representation is trivial. This form is useful for
+<strong>formal construction of complex numbers</strong><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and introduces an idea of representing a complex
+number as a point in two-dimensional space, which leads to geometrical interpretation.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Point (a, b) in a Real x Imaginary Cartesian space"
+           src="/post/five-faces-of-complex-numbers/img/ab.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="algebraic-operations-have-very-nice-interpretations-on-the-cartesian-plane">Algebraic operations have very nice interpretations on the Cartesian plane.</h4>
+<ul>
+<li>Addition follows the known parallelogram rule for vectors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Graphics form of adding rule"
+           src="/post/five-faces-of-complex-numbers/img/add.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Multiplying by $i$ is a 90-degree ($\frac{\pi}{2}$) rotation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Rotation as multiplication"
+           src="/post/five-faces-of-complex-numbers/img/circle.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+Note that from this perspective $ i^2 = -1$ makes perfect sense.</li>
+</ul>
+<p>Any other multiplication is just a rotation in point $(0,0)$ by some angle (described in the
+next paragraph) and rescaling (stretch or shorten) of the vector.</p>
+<h3 id="polar-coordinates">Polar coordinates</h3>
+<p>The rotation angle announced above is written as $\theta$, and the scaling factor is called $r$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Polar coordinates to point convertion"
+           src="/post/five-faces-of-complex-numbers/img/ang.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The relationship between the algebraic and trigonometric notations is only slightly more
+complicated, and requires some basic knowledge of trigonometry.</p>
+<p>For $z = a + bi$ $r$ is calculated using the Pythagorean theorem.</p>
+<p>$$ r = \sqrt{a^2 + b^2} $$</p>
+<p>In turn, $\theta$ is just a definition of the inverse of the tangent ($arctg$)</p>
+<p>$$ \theta = arctg(\frac{b}{a}) $$</p>
+<p>Importantly, note that again we are dealing with a pair of values, so the correct notation
+is: $z = (r, \theta)$</p>
+<p>This character is convenient because it makes multiplication so much easier:</p>
+<p>$$ (r_1, \theta_1) \cdot (r_2, \theta_2) = (r_1 r_2, \theta_1 + \theta_2) $$</p>
+<p>It is also a bridge to more sophisticated representations.</p>
+<h3 id="trigonometric-representation">Trigonometric representation</h3>
+<p>But how do you express a complex number using polar coordinates but as one number
+( not a pair, analogus to  $z = a + bi$) ?
+Once again, trigonometry comes in handy, namely the definition of
+the sine and cosine functions.</p></p>
+<p>By definition:</p>
+<p>$$sin (\theta) =\frac{b}{r}, cos (\theta) = \frac{a}{r}$$</p>
+<p>so</p>
+<p>$$a = r cos(\theta) , b = r sin(\theta)$$</p>
+<p>Substituting the values calculated above into the equation $z = a + bi$ we get:</p>
+<p>$$z = a + bi = r cos (\theta) + i r sin (\theta) = r \big ( cos (\theta) + i sin (\theta) \big )$$</p>
+<p>This form, although very useful (it is embedded in the Fourier transform itself), is not
+convenient for counting. However this problem can be solved by a clever trick, what the next
+paragraph will be about.</p>
+<h3 id="exponential-form">Exponential form</h3>
+<p>We need to start with a few words about <strong>Taylor series</strong><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>It’s a tool for expressing any function is some a form of polynomial</p>
+<p>$$ f(a)+\frac {f'(a)}{1!} (x-a)+ \frac{f''(a)}{2!} (x-a)^2+\frac{f'''(a)}{3!}(x-a)^3+ \cdots $$</p>
+<p>or in short:</p>
+<p>$$ \sum_{n=0} ^ {\infty} \frac {f^{(n)}(a)}{n!} (x-a)^{n} $$</p>
+<p>When we use a finite number of elements of the sum, the taylor series becomes an approximation
+of the original function around point $a$. The closer to point $a$ is the value of the function
+we calculate, the smaller the error of the approximation will be. Taylor series expressing
+with $a = 0$ is called <strong>Maclaurin series</strong><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<p>$$\sum_{n=0} ^ {\infty} f^{(n)}(0) \frac {x^n}{n!} =  f(0)+\frac {f'(0)}{1!} (x)+ \frac{f''(0)}{2!} (x)^2+\frac{f'''(0)}{3!}(x)^3+ \cdots$$</p>
+<p>What happens when we try to expand the sine and cosine functions into a Maclaurin series?
+Let’s start with calculating derivatives:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Sin and Cos derivatives"
+           src="/post/five-faces-of-complex-numbers/img/prims.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>We can see that the cycle repeats itself from the fourth derivative.
+Expanding the sine and cosine functions into the Taylor series looks like this:</p>
+<p>$$\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots $$</p>
+<p>$$ \cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots $$</p>
+<h2 id="the-magic-begins">The magic begins</h2>
+<p>Let’s recall the definition of the exponential function
+$$ e^x := \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots $$</p>
+<p>Note that this definition looks similar to taylor series expansions!
+If we substitute $x = i\theta$, even more similarities arise.</p>
+<p>$$ e^{i\theta} =  1 + i\theta + \frac{(i\theta)^2}{2} + \frac{(i\theta)^3}{3!} + \frac{(i\theta)^4}{4!} + \cdots = 1 + i\theta - \frac{\theta^2}{2} -i \frac{\theta^3}{3!} + \frac{\theta^4}{4!} + \cdots $$</p>
+<p>When we group the elements of the sum so that all real and all imaginary are next to each other
+and take $i$ in front of the parenthesis $\cdots$</p>
+<p>$$ \bigg(1 - \frac{\theta^2}{2}  + \frac{\theta^4}{4!} - \frac{\theta^6}{6!}+  \dots \bigg ) + i \bigg (\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \frac{\theta^7}{7!} +\dots \bigg ) $$</p>
+<p>$\cdots$ it turns out that the following equality is true:</p>
+<p>$$ e^{i\theta} = cos(\theta) + i sin(\theta) $$</p>
+<p>If that wasn’t neat enough if we substitute $\pi$ for $\theta$ we get:</p>
+<p>$$ e^{\pi i } +1 = 0$$</p>
+<p>What we call the <strong>Euler’s identity</strong><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>, which is widely recognized as one of the most
+beautiful equations in all of mathematics.</p>
+<p>Finally, we have to go back to the trigonometric form of complex numbers</p>
+<p>$$ z = a + bi = r cos (\theta) + i r sin (\theta) = r \big ( cos (\theta) + i sin (\theta) \big ) = re^{i\theta} $$</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I believe that understanding the relationship between the different forms of complex numbers is
+crucial to understanding the technical details behind the <strong>Fourier Transform</strong>.</p>
+<h2 id="references">References</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Complex_number#Relations_and_operations" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Complex_number#Relations_and_operations</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Algebraically_closed_field" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Algebraically_closed_field</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Complex_number#Formal_construction" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Complex_number#Formal_construction</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Taylor_series" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Taylor_series</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Colin_Maclaurin#Contributions_to_mathematics" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Colin_Maclaurin#Contributions_to_mathematics</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Euler%27s_identity" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Euler%27s_identity</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;text=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;t=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Five%20faces%20of%20complex%20numbers&amp;body=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;title=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Five%20faces%20of%20complex%20numbers%20https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://bartekkroczek.netlify.app/post/five-faces-of-complex-numbers/&amp;title=Five%20faces%20of%20complex%20numbers" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://bartekkroczek.netlify.app/"><img class="avatar mr-3 avatar-circle" src="/author/bartek-kroczek/avatar_hud775384d6e1de19a81664cb136eec910_1089933_270x270_fill_q75_lanczos_center.jpg" alt="Bartek Kroczek"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://bartekkroczek.netlify.app/">Bartek Kroczek</a></h5>
+      <h6 class="card-subtitle">PhD Student (Cognitive Neuroscience)</h6>
+      <p class="card-text">Data scientist with an academic fervor.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=qChlLc0AAAAJ" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/bartekkroczek" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Bartlomiej-Kroczek" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/bart%C5%82omiej-kroczek-444348218/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    2022 Bartek Kroczek
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.1cb9e2fc8399acee94eab837265b73bf.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>
