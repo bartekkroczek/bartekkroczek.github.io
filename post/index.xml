@@ -5,12 +5,20 @@
     <link>https://bartekkroczek.netlify.app/post/</link>
       <atom:link href="https://bartekkroczek.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://bartekkroczek.netlify.app/media/icon_hu4116baecf408685f396334e43468238c_33317_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://bartekkroczek.netlify.app/post/</link>
     </image>
+    
+    <item>
+      <title>From coins to tales</title>
+      <link>https://bartekkroczek.netlify.app/post/from-coins-to-tales/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://bartekkroczek.netlify.app/post/from-coins-to-tales/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Five faces of complex numbers</title>
