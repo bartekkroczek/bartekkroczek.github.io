@@ -5,12 +5,20 @@
     <link>https://bartekkroczek.netlify.app/author/bart%C5%82omiej-kroczek/</link>
       <atom:link href="https://bartekkroczek.netlify.app/author/bart%C5%82omiej-kroczek/index.xml" rel="self" type="application/rss+xml" />
     <description>Bartłomiej Kroczek</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2022 Bartek Kroczek</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2023 Bartek Kroczek</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://bartekkroczek.netlify.app/media/icon_hu4116baecf408685f396334e43468238c_33317_512x512_fill_lanczos_center_3.png</url>
       <title>Bartłomiej Kroczek</title>
       <link>https://bartekkroczek.netlify.app/author/bart%C5%82omiej-kroczek/</link>
     </image>
+    
+    <item>
+      <title>Uncovering the course of analogical mapping using eye tracking</title>
+      <link>https://bartekkroczek.netlify.app/publication/kroczek-2022-uncovering/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://bartekkroczek.netlify.app/publication/kroczek-2022-uncovering/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Galton and Spearman revisited: Can single general discrimination ability drive performance on diverse sensorimotor tasks and explain intelligence?</title>
